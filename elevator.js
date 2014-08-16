@@ -8,18 +8,23 @@ module.exports = {
 
       var endLevelToInteger = parseInt(endLevel);
 
-      if(endLevelToInteger < currentLevel) {
+      if (typeof currentLevel !== 'number'){
+        return 0;
+      }
+      else if(typeof endLevel !== 'string'){
+        return 0;
+      }
+      else if(-3 > endLevelToInteger || endLevelToInteger > 3){
+        return 0;
+      }
+      else if(0 > currentLevel || currentLevel > 3){
+        return 0;
+      }
+      else if(endLevelToInteger < currentLevel) {
         return endLevelToInteger - currentLevel;
       }
-      if (-3 > endLevelToInteger > 3){
-        return currentLevel;
-      }
-
+     
       return currentLevel + endLevelToInteger;
-
-
-
- 
 
   }
 
