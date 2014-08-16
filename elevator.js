@@ -14,6 +14,7 @@ module.exports = {
       if (-3 > endLevelToInteger > 3){
         return currentLevel;
       }
+
       return currentLevel + endLevelToInteger;
 
 
