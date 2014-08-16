@@ -4,7 +4,9 @@
   "description": "a devleague exercise",
   "main": "elevator.js",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "gulp-mocha": "^1.0.0"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
     "gulp": "^3.8.5",
